@@ -61,4 +61,5 @@ class Players extends Model
         "threat",	
         "ict_index"
     ];
+    public $timestamps = false;
 }

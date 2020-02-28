@@ -13,7 +13,7 @@ class PlayerDao {
 
         try{
             foreach ($data['elements'] as $player) {
-                Players::updateOrCreate($player);
+                Players::updateOrCreate(['id' => $player['id']], $player);
             }
             DB::commit();
         }catch(\Exception $e){

@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        // $schedule->exec('curl -X GET http://localhost:8000/import')->cron('* * * * *')->sendOutputTo("/var/www/html/blog/output", true);
+        $schedule->exec('curl -X GET http://localhost:8000/import')->cron('* * * * *')->sendOutputTo("/var/www/html/blog/output", true);
     }
 
     /**
